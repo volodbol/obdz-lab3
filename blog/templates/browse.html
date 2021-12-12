@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>Browse entries</title>
+    </head>
+<body>
+    <h1>Browse entries</h1>
+	{{  entries }}
+    {% for entry in entries %}
+        Title: {{ entry }}<br>
+        Date: {{ entry }}<br>
+        Content: {{ entry }}<p>
+    {% else %}
+        This blog is empty.
+    {% endfor %}
+</body>
+</html>
